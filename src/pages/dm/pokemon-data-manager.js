@@ -18,7 +18,7 @@ export class PokemonDataManager extends LitElement {
   async fetchPokemons(page) {
     try {
       // Realiza una solicitud a la API de Pokemon para obtener un listado de pokemons
-      const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=10&offset=${page * 10}`);
+      const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=10&offset=${page}`);
       const data = await response.json();
 
       // Mapea los resultados para obtener la información detallada de cada pokemon.

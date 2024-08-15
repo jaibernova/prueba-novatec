@@ -65,7 +65,7 @@ export class PokemonEvolutionsDataManager extends LitElement {
       // Avanza al siguiente paso en la cadena de evolución si existe.
       currentStep = currentStep.evolves_to.length > 0 ? currentStep.evolves_to[0] : null;
     } while (currentStep !== null); // Continúa hasta que no haya más evoluciones.
-
+    console.log(evolutions);
     return evolutions; // Retorna el array de evoluciones.
   }
 
